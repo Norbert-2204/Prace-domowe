@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <div>
+          <p>Filtry:</p>
+          <input placeholder="Wyszukaj po nazwie..." class="search" />
+        </div>
+        <div>
+          <input
+            id="alive"
+            name="sort"
+            type="radio"
+            class="this-checked"
+            checked
+          />
+          <span>Żywy</span>
+          <input id="dead" name="sort" type="radio" class="this-checked" />
+          <span>Martwy</span>
+          <input id="unknown" name="sort" type="radio" class="this-checked" />
+          <span>Nieznany</span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="character-container"></div>
+      <p class="falseName"></p>
+      <div class="arrows-container">
+        <button class="prev-page">&#8592;</button>
+        <button class="next-page">&#8594;</button>
+      </div>
+    </main>
+    <script src="data.js"></script>
+  </body>
+</html>
